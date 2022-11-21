@@ -54,7 +54,7 @@ void SJCore::Start()
 	{
 		SJDirectory Dir;
 
-		Dir.MoveParent(L"SJAPI");
+		Dir.MoveParent();
 		Dir.MoveChild(L"Res");
 
 		std::vector<SJFile> AllImageFile = Dir.DirectoryAllFileToVector(L"*.bmp");
@@ -68,7 +68,7 @@ void SJCore::Start()
 	{
 		SJDirectory Dir;
 
-		Dir.MoveParent(L"SJAPI");
+		Dir.MoveParent();
 		Dir.MoveChild(L"Res");
 		Dir.MoveChild(L"Sound");
 
