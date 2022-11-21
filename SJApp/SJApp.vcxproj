@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5731871a-92db-4b16-bd15-d29e45dee34b}</ProjectGuid>
+    <RootNamespace>SJApp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\Build\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>..\SJEngineBase\;..\SJEnginePlatform\;..\SJEngineClient\;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Build\$(Platform)\$(Configuration)\;..\TP\$(Platform)\$(Configuration)\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\Build\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>..\SJEngineBase\;..\SJEngineClient\;..\SJEnginePlatform\;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Build\$(Platform)\$(Configuration)\;..\TP\$(Platform)\$(Configuration)\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AppMain.cpp" />
+    <ClCompile Include="Block.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="BlockPaticle.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="BonusCard.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="BonusEffect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="BossBlock.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="BossBlockPaticle.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="BossStageScene.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="BossStage_Terrain.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Bowser.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Bowser_Fire.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Bowser_State.cpp" />
+    <ClCompile Include="Coin.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Course_Clear.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Ending.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="EndingScene.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="EventCollider.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="FadeActor.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Goomba.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Goomba_State.cpp" />
+    <ClCompile Include="ItemBox.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Koopa_Troopa.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Koopa_Troopa_State.cpp" />
+    <ClCompile Include="LogicValue.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Mario.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Mario_Anim.cpp" />
+    <ClCompile Include="Mario_State.cpp" />
+    <ClCompile Include="Mushroom.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Open_Door.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Pipe.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Piranha_Plant.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Piranha_Plant_State.cpp" />
+    <ClCompile Include="Plant_Fire.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="RacoonLeaf.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="RacoonLeaf_State.cpp" />
+    <ClCompile Include="Red_Goomba.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Red_Goomba_State.cpp" />
+    <ClCompile Include="SJCore.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Smoke_Effect.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Stage1Scene.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Stage1_Terrain.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="StageBonus.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TitleAnimation.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TitleBackGround.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TitleCursor.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TitleScene.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="UIStage.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="UI_Power.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="You_Got_A_Card.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Block.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="BlockPaticle.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="BonusCard.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="BonusEffect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="BossBlock.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="BossBlockPaticle.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="BossStageScene.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="BossStage_Terrain.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Bowser.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Bowser_Fire.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Coin.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Course_Clear.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Ending.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="EndingScene.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="EventCollider.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="FadeActor.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Goomba.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ItemBox.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Koopa_Troopa.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="LogicValue.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Mario.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Mushroom.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Open_Door.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Pipe.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Piranha_Plant.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Plant_Fire.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="RacoonLeaf.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Red_Goomba.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="SJCore.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Smoke_Effect.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Stage1Scene.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Stage1_Terrain.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="StageBonus.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TitleAnimation.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TitleBackGround.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TitleCursor.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TitleScene.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="UIStage.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="UI_Power.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="You_Got_A_Card.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

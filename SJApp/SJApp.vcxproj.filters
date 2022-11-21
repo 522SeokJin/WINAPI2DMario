@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AppMain.cpp" />
+    <ClCompile Include="SJCore.cpp" />
+    <ClCompile Include="TitleScene.cpp">
+      <Filter>Contents\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage1Scene.cpp">
+      <Filter>Contents\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="BossStageScene.cpp">
+      <Filter>Contents\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleBackGround.cpp">
+      <Filter>Contents\Actor\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="UIStage.cpp">
+      <Filter>Contents\Actor\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Mario.cpp">
+      <Filter>Contents\Actor\Object\Mario</Filter>
+    </ClCompile>
+    <ClCompile Include="Mario_State.cpp">
+      <Filter>Contents\Actor\Object\Mario</Filter>
+    </ClCompile>
+    <ClCompile Include="Goomba.cpp">
+      <Filter>Contents\Actor\Object\Monster\Goomba</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleCursor.cpp">
+      <Filter>Contents\Actor\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="LogicValue.cpp" />
+    <ClCompile Include="TitleAnimation.cpp">
+      <Filter>Contents\Actor\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Mario_Anim.cpp">
+      <Filter>Contents\Actor\Object\Mario</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Contents\Actor\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Goomba_State.cpp">
+      <Filter>Contents\Actor\Object\Monster\Goomba</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemBox.cpp">
+      <Filter>Contents\Actor\Object\Blocks\ItemBox</Filter>
+    </ClCompile>
+    <ClCompile Include="Koopa_Troopa.cpp">
+      <Filter>Contents\Actor\Object\Monster\Koopa_Troopa</Filter>
+    </ClCompile>
+    <ClCompile Include="Koopa_Troopa_State.cpp">
+      <Filter>Contents\Actor\Object\Monster\Koopa_Troopa</Filter>
+    </ClCompile>
+    <ClCompile Include="Block.cpp">
+      <Filter>Contents\Actor\Object\Blocks\Block</Filter>
+    </ClCompile>
+    <ClCompile Include="Coin.cpp">
+      <Filter>Contents\Actor\Object\Item\Coin</Filter>
+    </ClCompile>
+    <ClCompile Include="Mushroom.cpp">
+      <Filter>Contents\Actor\Object\Item\Mushroom</Filter>
+    </ClCompile>
+    <ClCompile Include="RacoonLeaf.cpp">
+      <Filter>Contents\Actor\Object\Item\RacoonLeaf</Filter>
+    </ClCompile>
+    <ClCompile Include="RacoonLeaf_State.cpp">
+      <Filter>Contents\Actor\Object\Item\RacoonLeaf</Filter>
+    </ClCompile>
+    <ClCompile Include="StageBonus.cpp">
+      <Filter>Contents\Actor\Object\Event\StageClearEvent\StageBonus</Filter>
+    </ClCompile>
+    <ClCompile Include="BonusEffect.cpp">
+      <Filter>Contents\Actor\Object\Event\StageClearEvent\BonusEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Course_Clear.cpp">
+      <Filter>Contents\Actor\Object\Event\StageClearEvent\ClearFont</Filter>
+    </ClCompile>
+    <ClCompile Include="You_Got_A_Card.cpp">
+      <Filter>Contents\Actor\Object\Event\StageClearEvent\ClearFont</Filter>
+    </ClCompile>
+    <ClCompile Include="BonusCard.cpp">
+      <Filter>Contents\Actor\Object\Event\StageClearEvent\BonusCard</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage1_Terrain.cpp">
+      <Filter>Contents\Actor\Terrain\Stage1</Filter>
+    </ClCompile>
+    <ClCompile Include="BossStage_Terrain.cpp">
+      <Filter>Contents\Actor\Terrain\BossStage</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_Power.cpp">
+      <Filter>Contents\Actor\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="BossBlock.cpp">
+      <Filter>Contents\Actor\Object\Blocks\BossBlock</Filter>
+    </ClCompile>
+    <ClCompile Include="Bowser.cpp">
+      <Filter>Contents\Actor\Object\Monster\Bowser</Filter>
+    </ClCompile>
+    <ClCompile Include="Bowser_State.cpp">
+      <Filter>Contents\Actor\Object\Monster\Bowser</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockPaticle.cpp">
+      <Filter>Contents\Actor\Object\Blocks\Block</Filter>
+    </ClCompile>
+    <ClCompile Include="BossBlockPaticle.cpp">
+      <Filter>Contents\Actor\Object\Blocks\BossBlock</Filter>
+    </ClCompile>
+    <ClCompile Include="Bowser_Fire.cpp">
+      <Filter>Contents\Actor\Object\Monster\Bowser\Bowser_Fire</Filter>
+    </ClCompile>
+    <ClCompile Include="FadeActor.cpp">
+      <Filter>Contents\Actor\Global\FadeActor</Filter>
+    </ClCompile>
+    <ClCompile Include="Smoke_Effect.cpp">
+      <Filter>Contents\Actor\Object\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Open_Door.cpp">
+      <Filter>Contents\Actor\Object\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="EndingScene.cpp">
+      <Filter>Contents\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Ending.cpp">
+      <Filter>Contents\Actor\Ending</Filter>
+    </ClCompile>
+    <ClCompile Include="Red_Goomba.cpp">
+      <Filter>Contents\Actor\Object\Monster\Red_Goomba</Filter>
+    </ClCompile>
+    <ClCompile Include="Red_Goomba_State.cpp">
+      <Filter>Contents\Actor\Object\Monster\Red_Goomba</Filter>
+    </ClCompile>
+    <ClCompile Include="EventCollider.cpp">
+      <Filter>Contents\Actor\Object\Event\EventCollider</Filter>
+    </ClCompile>
+    <ClCompile Include="Piranha_Plant.cpp">
+      <Filter>Contents\Actor\Object\Monster\Piranha_Plant</Filter>
+    </ClCompile>
+    <ClCompile Include="Plant_Fire.cpp">
+      <Filter>Contents\Actor\Object\Monster\Piranha_Plant</Filter>
+    </ClCompile>
+    <ClCompile Include="Piranha_Plant_State.cpp">
+      <Filter>Contents\Actor\Object\Monster\Piranha_Plant</Filter>
+    </ClCompile>
+    <ClCompile Include="Pipe.cpp">
+      <Filter>Contents\Actor\Terrain\Stage1\Pipe</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SJCore.h" />
+    <ClInclude Include="TitleScene.h">
+      <Filter>Contents\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage1Scene.h">
+      <Filter>Contents\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="BossStageScene.h">
+      <Filter>Contents\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleBackGround.h">
+      <Filter>Contents\Actor\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="UIStage.h">
+      <Filter>Contents\Actor\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Mario.h">
+      <Filter>Contents\Actor\Object\Mario</Filter>
+    </ClInclude>
+    <ClInclude Include="Goomba.h">
+      <Filter>Contents\Actor\Object\Monster\Goomba</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleCursor.h">
+      <Filter>Contents\Actor\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="LogicValue.h" />
+    <ClInclude Include="TitleAnimation.h">
+      <Filter>Contents\Actor\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Contents\Actor\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemBox.h">
+      <Filter>Contents\Actor\Object\Blocks\ItemBox</Filter>
+    </ClInclude>
+    <ClInclude Include="Koopa_Troopa.h">
+      <Filter>Contents\Actor\Object\Monster\Koopa_Troopa</Filter>
+    </ClInclude>
+    <ClInclude Include="Block.h">
+      <Filter>Contents\Actor\Object\Blocks\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="Coin.h">
+      <Filter>Contents\Actor\Object\Item\Coin</Filter>
+    </ClInclude>
+    <ClInclude Include="Mushroom.h">
+      <Filter>Contents\Actor\Object\Item\Mushroom</Filter>
+    </ClInclude>
+    <ClInclude Include="RacoonLeaf.h">
+      <Filter>Contents\Actor\Object\Item\RacoonLeaf</Filter>
+    </ClInclude>
+    <ClInclude Include="StageBonus.h">
+      <Filter>Contents\Actor\Object\Event\StageClearEvent\StageBonus</Filter>
+    </ClInclude>
+    <ClInclude Include="BonusEffect.h">
+      <Filter>Contents\Actor\Object\Event\StageClearEvent\BonusEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Course_Clear.h">
+      <Filter>Contents\Actor\Object\Event\StageClearEvent\ClearFont</Filter>
+    </ClInclude>
+    <ClInclude Include="You_Got_A_Card.h">
+      <Filter>Contents\Actor\Object\Event\StageClearEvent\ClearFont</Filter>
+    </ClInclude>
+    <ClInclude Include="BonusCard.h">
+      <Filter>Contents\Actor\Object\Event\StageClearEvent\BonusCard</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage1_Terrain.h">
+      <Filter>Contents\Actor\Terrain\Stage1</Filter>
+    </ClInclude>
+    <ClInclude Include="BossStage_Terrain.h">
+      <Filter>Contents\Actor\Terrain\BossStage</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Power.h">
+      <Filter>Contents\Actor\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="BossBlock.h">
+      <Filter>Contents\Actor\Object\Blocks\BossBlock</Filter>
+    </ClInclude>
+    <ClInclude Include="Bowser.h">
+      <Filter>Contents\Actor\Object\Monster\Bowser</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockPaticle.h">
+      <Filter>Contents\Actor\Object\Blocks\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="BossBlockPaticle.h">
+      <Filter>Contents\Actor\Object\Blocks\BossBlock</Filter>
+    </ClInclude>
+    <ClInclude Include="Bowser_Fire.h">
+      <Filter>Contents\Actor\Object\Monster\Bowser\Bowser_Fire</Filter>
+    </ClInclude>
+    <ClInclude Include="FadeActor.h">
+      <Filter>Contents\Actor\Global\FadeActor</Filter>
+    </ClInclude>
+    <ClInclude Include="Smoke_Effect.h">
+      <Filter>Contents\Actor\Object\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Open_Door.h">
+      <Filter>Contents\Actor\Object\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="EndingScene.h">
+      <Filter>Contents\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Ending.h">
+      <Filter>Contents\Actor\Ending</Filter>
+    </ClInclude>
+    <ClInclude Include="Red_Goomba.h">
+      <Filter>Contents\Actor\Object\Monster\Red_Goomba</Filter>
+    </ClInclude>
+    <ClInclude Include="EventCollider.h">
+      <Filter>Contents\Actor\Object\Event\EventCollider</Filter>
+    </ClInclude>
+    <ClInclude Include="Piranha_Plant.h">
+      <Filter>Contents\Actor\Object\Monster\Piranha_Plant</Filter>
+    </ClInclude>
+    <ClInclude Include="Plant_Fire.h">
+      <Filter>Contents\Actor\Object\Monster\Piranha_Plant</Filter>
+    </ClInclude>
+    <ClInclude Include="Pipe.h">
+      <Filter>Contents\Actor\Terrain\Stage1\Pipe</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Contents">
+      <UniqueIdentifier>{32b1977a-70e9-4c4e-97e1-1c614e9789a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor">
+      <UniqueIdentifier>{ca12466c-f7c6-4cb3-bb6d-730c1ad96295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Scene">
+      <UniqueIdentifier>{5a2e797a-37a6-4772-9bf7-5cda3c21d149}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Terrain">
+      <UniqueIdentifier>{d410975c-90a0-4447-be7f-911c49df5440}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Title">
+      <UniqueIdentifier>{3f206204-41ca-4e79-86ff-10a67a2919c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object">
+      <UniqueIdentifier>{36cebf6a-fc60-4201-a1ba-6f55988dc280}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\UI">
+      <UniqueIdentifier>{363b1670-5002-4e65-9d96-73184a7c2a48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Mario">
+      <UniqueIdentifier>{ba1cf317-afb5-437c-a370-7a1369f44697}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Global">
+      <UniqueIdentifier>{9374537a-c50a-4c91-a3e4-832dde18dc70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Monster">
+      <UniqueIdentifier>{01df8044-b74e-4eac-9143-76ac7ed5a79d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Monster\Koopa_Troopa">
+      <UniqueIdentifier>{653ea052-21fd-4b25-bcb9-026a29f31a20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Monster\Goomba">
+      <UniqueIdentifier>{92612e0c-18f9-4891-a8ef-918f50fd1a66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Item">
+      <UniqueIdentifier>{0613e273-5f10-427d-835c-5e72805b940f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Blocks">
+      <UniqueIdentifier>{52d82170-737a-4e84-b606-5c618d8d3d89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Blocks\ItemBox">
+      <UniqueIdentifier>{c3ad7117-2302-4a86-9535-05f256d81ab4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Blocks\Block">
+      <UniqueIdentifier>{df596a4d-d183-4366-a616-549e36fb5720}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Item\Coin">
+      <UniqueIdentifier>{2430158e-0030-4d97-8155-bd05099a1a1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Item\Mushroom">
+      <UniqueIdentifier>{b603c2b1-9fbf-4c50-8034-9e70f02b268f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Item\RacoonLeaf">
+      <UniqueIdentifier>{1b459b88-2a7c-4505-92d5-610bdb65dd42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Event">
+      <UniqueIdentifier>{876c22e3-8298-43db-9640-a460dd0d715a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Event\StageClearEvent">
+      <UniqueIdentifier>{f3c488cc-c724-4a64-91dd-6cb333b16dcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Event\StageClearEvent\BonusEffect">
+      <UniqueIdentifier>{79b9ff13-220b-4cc1-86e7-c4ec3a58c66a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Event\StageClearEvent\StageBonus">
+      <UniqueIdentifier>{c5117182-434a-4264-b002-d49bc8753ec5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Event\StageClearEvent\ClearFont">
+      <UniqueIdentifier>{9ce90afc-ccd2-420f-80a8-1b4ba7d8250d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Event\StageClearEvent\BonusCard">
+      <UniqueIdentifier>{7e59afe2-7db7-4c6c-b6ff-99010ee430ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Terrain\Stage1">
+      <UniqueIdentifier>{7f8e137e-a7df-4e54-ae3d-a030e4eb03f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Terrain\BossStage">
+      <UniqueIdentifier>{b49cd9cc-f9d9-462c-ac3b-15159655b0da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Blocks\BossBlock">
+      <UniqueIdentifier>{0f08371f-ea32-467f-b2df-eb5ebd549ad7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Monster\Bowser">
+      <UniqueIdentifier>{b6a0f62d-3cbd-4a2c-9da3-b50c753bf1df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Monster\Bowser\Bowser_Fire">
+      <UniqueIdentifier>{fc8a9c7f-8da3-4cb0-8ec8-a22a74c04546}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Global\FadeActor">
+      <UniqueIdentifier>{d6759c7f-467f-4c0a-b80a-959a8025e798}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Effect">
+      <UniqueIdentifier>{6cb0437a-0557-43a7-af31-1ef55ec96831}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Ending">
+      <UniqueIdentifier>{846a3d6a-a53d-450f-b340-30ba55266a0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Monster\Red_Goomba">
+      <UniqueIdentifier>{d159dd37-4131-444d-8f6d-c7ed496f3992}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Event\EventCollider">
+      <UniqueIdentifier>{945c11b5-fabb-44b7-9fd5-16b38fe2f212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Object\Monster\Piranha_Plant">
+      <UniqueIdentifier>{8199a915-efee-4d26-ab39-e3e182058596}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Actor\Terrain\Stage1\Pipe">
+      <UniqueIdentifier>{09e5af4f-389a-420a-8473-4d125fea5481}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

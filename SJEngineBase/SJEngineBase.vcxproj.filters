@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="SJString.h">
+      <Filter>String</Filter>
+    </ClInclude>
+    <ClInclude Include="SJDirectory.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="SJFile.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="SJDebug.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="SJPath.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="SJMemory.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="SJEngineBasePublic.h">
+      <Filter>PublicHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="SJMath.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="SJTimer.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="SJInput.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="SJTimeEventer.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="SJFSM.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="SJObjectBase.h">
+      <Filter>ObjectBase</Filter>
+    </ClInclude>
+    <ClInclude Include="SJSound.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod.h">
+      <Filter>Sound\Fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod.hpp">
+      <Filter>Sound\Fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod_codec.h">
+      <Filter>Sound\Fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod_common.h">
+      <Filter>Sound\Fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod_dsp.h">
+      <Filter>Sound\Fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod_dsp_effects.h">
+      <Filter>Sound\Fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod_errors.h">
+      <Filter>Sound\Fmod</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod_output.h">
+      <Filter>Sound\Fmod</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SJString.cpp">
+      <Filter>String</Filter>
+    </ClCompile>
+    <ClCompile Include="SJDirectory.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="SJFile.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="SJDebug.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="SJPath.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="SJMemory.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="SJMath.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="SJTimer.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="SJInput.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="SJObjectBase.cpp">
+      <Filter>ObjectBase</Filter>
+    </ClCompile>
+    <ClCompile Include="SJSound.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{7ccb7f45-a4bd-4603-a421-fc4a6d74a9ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO">
+      <UniqueIdentifier>{20d6ddc0-dd84-4a92-9e3f-5ed42e9d3b64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="String">
+      <UniqueIdentifier>{e49755d9-649c-4688-a69e-04cdaf9e1fc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{da697b62-3202-42b7-8676-d8686c0cd589}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PublicHeader">
+      <UniqueIdentifier>{65bce5df-3e70-4adb-b1f7-156d0f3182b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{fa04fcb4-1744-4e91-8803-2f8440486192}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{2fc35506-4ef1-4679-9408-98c4a8614b97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content">
+      <UniqueIdentifier>{69d55a2b-c53d-4640-91d1-79ffcee55e02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectBase">
+      <UniqueIdentifier>{127f792f-aaf1-4448-9977-2a292bcdc4a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound">
+      <UniqueIdentifier>{a20a14fb-c4ef-4b04-961a-815cb84411d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound\Fmod">
+      <UniqueIdentifier>{b765a200-0dab-4886-ad7c-70b2ec04d6ea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

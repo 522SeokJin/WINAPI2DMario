@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="SJScene.h" />
+    <ClInclude Include="SJEngineClientPublic.h" />
+    <ClInclude Include="SJActor.h" />
+    <ClInclude Include="SJSceneManager.h" />
+    <ClInclude Include="SJWindowResMgr.h" />
+    <ClInclude Include="SJRenderer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="SJRendererBasic.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="SJRendererAnimation.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="SJCollision.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SJScene.cpp" />
+    <ClCompile Include="SJActor.cpp" />
+    <ClCompile Include="SJSceneManager.cpp" />
+    <ClCompile Include="SJWindowResMgr.cpp" />
+    <ClCompile Include="SJRenderer.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="SJRendererBasic.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="SJRendererAnimation.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="SJCollision.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{48dee2e8-e617-4f04-bb9a-9bc2dac0fbbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision">
+      <UniqueIdentifier>{d38c9e0b-4059-4f10-b1e1-09139f262157}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
