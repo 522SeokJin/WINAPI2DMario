@@ -54,7 +54,7 @@ void SJCore::Start()
 	{
 		SJDirectory Dir;
 
-		Dir.MoveParent();
+		Dir.MoveParent(L"WINAPI2DMario");
 		Dir.MoveChild(L"Res");
 
 		std::vector<SJFile> AllImageFile = Dir.DirectoryAllFileToVector(L"*.bmp");
@@ -68,7 +68,7 @@ void SJCore::Start()
 	{
 		SJDirectory Dir;
 
-		Dir.MoveParent();
+		Dir.MoveParent(L"WINAPI2DMario");
 		Dir.MoveChild(L"Res");
 		Dir.MoveChild(L"Sound");
 
